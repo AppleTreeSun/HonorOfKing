@@ -1,0 +1,120 @@
+.top {
+  height: 41px;
+  border: 1px solid #f5f5f5;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 41px;
+    padding: 0 5px;
+
+    .top-left {
+      display: flex;
+
+      .top-logo {
+        position: relative;
+        z-index: 1000;
+        width: 150px;
+        height: 41px;
+        background: url('../image/logo.png') top center no-repeat;
+
+        a {
+          display: block;
+          height: 100%;
+
+          text-indent: -600px;
+        }
+      }
+
+      .top-img {
+        position: relative;
+        width: 230px;
+        height: 41px;
+
+        &:hover .top-img-ad {
+          display: block;
+        }
+
+        .top-img-ad {
+          z-index: 200;
+          position: absolute;
+          top: 0;
+          left: -150px;
+
+          display: none;
+        }
+      }
+    }
+
+    .top-right {
+      display: flex;
+      justify-content: flex-end;
+      width: 300px;
+      margin-left: 10px;
+
+      .growth {
+        position: relative;
+        width: 88px;
+        padding-left: 35px;
+        margin-right: 20px;
+
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 41px;
+
+        &::after {
+          content: '';
+
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          width: 30px;
+          height: 30px;
+
+          background: url('../image/title_sprite.png') -30px 0;
+        }
+
+        a {
+          color: #464646;
+        }
+      }
+
+      .ranking {
+        position: relative;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 41px;
+        padding-right: 30px;
+
+        .ranking-icon {
+          position: absolute;
+          background: url('../image/title_sprite.png') 0 0;
+          width: 30px;
+          height: 30px;
+          top: 5px;
+          right: 3px;
+          opacity: .1;
+          transform: rotate(90deg);
+        }
+
+        &:hover .dropdown {
+          display: block;
+          animation: drowdownAnim 300ms ease-in forwards;
+        }
+
+        .dropdown {
+          display: none;
+          z-index: 300;
+          position: absolute;
+          right: 0;
+          top: 41px;
+
+          iframe {
+            width: 708px;
+            height: 582px;
+          }
+        }
+      }
+    }
+  }
+}

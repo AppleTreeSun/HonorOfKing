@@ -1,0 +1,17 @@
+body, ul, ol, li, dl, dt, dd, p, h, h1, h2,h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, li, dl, dt, dd {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
